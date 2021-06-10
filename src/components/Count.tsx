@@ -12,9 +12,19 @@ export const Count: VFC<Props> = ({ label, count, increment, decrement }) => {
   
   return (
   	<div>
-      <div>{label}: {count}（100 まであと {remaining}）</div>
-      <button type="button" onClick={decrement}>-</button>
-      <button type="button" onClick={increment}>+</button>
+      <div
+        aria-label={`Counter ${label} count`}
+      >{label}: {count}（100 まであと {remaining}）</div>
+      <button
+        aria-label={`Counter ${label} decrement`}
+        type="button"
+        onClick={decrement}
+      >-</button>
+      <button
+        aria-label={`Counter ${label} increment`}
+        type="button"
+        onClick={increment}
+      >+</button>
   	</div>
   )
 }
