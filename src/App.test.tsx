@@ -3,7 +3,7 @@ import App from './App'
 
 afterEach(cleanup)
 
-describe('カウンター A', () => {
+describe('カウンター A は', () => {
   // 前準備（arrange）
   const regexpCount = /A：(-?[0-9]+)（100 まであと (.+)）/i
   const regexpTotalCount = /合計：(-?[0-9]+)/i
