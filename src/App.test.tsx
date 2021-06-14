@@ -20,6 +20,12 @@ describe('カウンター A は', () => {
   })
 
   describe('はじめに', () => {
+    it('カウント A の Aria Label に "Counter A count" を設定する', () => {
+      // 検証（assert）
+      const ariaLabel = countElement.getAttribute('aria-label')
+      expect(ariaLabel).toBe('Counter A count')
+    })
+
     it('カウント A に 0 を表示する', () => {
       // 検証（assert）
       const text = countElement.textContent
