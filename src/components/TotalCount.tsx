@@ -13,12 +13,12 @@ export const TotalCount = ({ totalCount, increment, decrement }: Props) => {
       >合計：{totalCount}</div>
       <span>両方を増減</span>
       <button
-        aria-label={`Total Counter decrement`}
+        aria-label="Total Counter decrement"
         type="button"
         onClick={decrement}
       >-</button>
       <button
-        aria-label={`Total Counter increment`}
+        aria-label="Total Counter increment"
         type="button"
         onClick={increment}
       >+</button>
