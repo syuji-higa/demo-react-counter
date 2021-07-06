@@ -48,7 +48,7 @@ describe('個別カウンター', () => {
       })
     })
   
-    describe('100 までの残りが 1 減らして表示する', () => {
+    describe('100 までの残りを 1 減らして表示する', () => {
       it('カウンター A のカウント A の 100 までの残りに、99 を表示する', () => {
         // 実行（act）
         fireEvent.click(incrementElement)
@@ -59,7 +59,7 @@ describe('個別カウンター', () => {
       })
     })
   
-    describe('合計カウントが 1 増やして表示する', () => {
+    describe('合計カウントを 1 増やして表示する', () => {
       it('カウンター A の合計カウントに、1 を表示する', () => {
         // 実行（act）
         fireEvent.click(incrementElement)
@@ -72,7 +72,7 @@ describe('個別カウンター', () => {
   })
 
   describe('- ボタンをクリックすると、', () => {
-    describe('カウントが 1 減らして表示する', () => {
+    describe('カウントを 1 減らして表示する', () => {
       it('カウンター A のカウント A に、-1 を表示する', () => {
         // 実行（act） 
         fireEvent.click(decrementElement)
@@ -83,7 +83,7 @@ describe('個別カウンター', () => {
       })
     })
   
-    describe('100 までの残りが 1 増やして表示する', () => {
+    describe('100 までの残りを 1 増やして表示する', () => {
       it('カウンター A のカウント A の 100 までの残りに、101 を表示する', () => {
         // 実行（act）
         fireEvent.click(decrementElement)
@@ -94,7 +94,7 @@ describe('個別カウンター', () => {
       })
     })
   
-    describe('合計カウントが 1 減らして表示する', () => {
+    describe('合計カウントを 1 減らして表示する', () => {
       it('カウンター A の合計カウントに、-1 を表示する', () => {
         // 実行（act）
         fireEvent.click(decrementElement)
@@ -136,7 +136,7 @@ describe('合計カウンター', () => {
   })
 
   describe('+ ボタンをクリックすると、', () => {
-    describe('すべての個別カウントが 1 増やして表示する', () => {
+    describe('すべての個別カウントを 1 増やして表示する', () => {
       it('カウント A に、1 を表示する', () => {
         // 実行（act）
         fireEvent.click(incrementElement)
@@ -155,7 +155,7 @@ describe('合計カウンター', () => {
       })
     })
     
-    describe('合計カウントが個別カウンターの数だけ増やして表示する', () => {
+    describe('合計カウントを個別カウンターの数だけ増やして表示する', () => {
       it('合計カウントに、2 を表示する', () => {
         // 実行（act） 
         fireEvent.click(incrementElement)
@@ -168,7 +168,7 @@ describe('合計カウンター', () => {
   })
 
   describe('- ボタンをクリックすると、', () => {
-    describe('すべての個別カウントが 1 減らして表示する', () => {
+    describe('すべての個別カウントを 1 減らして表示する', () => {
       it('カウント A に、1 を表示する', () => {
         // 実行（act）
         fireEvent.click(decrementElement)
@@ -187,7 +187,7 @@ describe('合計カウンター', () => {
       })
     })
   
-    describe('合計カウントが個別カウンターの数だけ減らして表示する', () => {
+    describe('合計カウントを個別カウンターの数だけ減らして表示する', () => {
       it('合計カウントに、-2 を表示する', () => {
         // 実行（act） 
         fireEvent.click(decrementElement)
