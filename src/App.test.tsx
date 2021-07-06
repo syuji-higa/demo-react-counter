@@ -37,7 +37,7 @@ describe('個別カウンター', () => {
   })
 
   describe('+ ボタンをクリックすると、', () => {
-    describe('カウントが 1 増やして表示する', () => {
+    describe('カウントを 1 増やして表示する', () => {
       it('カウンター A のカウント A に、1 を表示する', () => {
         // 実行（act） 
         fireEvent.click(incrementElement)
