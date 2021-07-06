@@ -169,7 +169,7 @@ describe('合計カウンター', () => {
 
   describe('- ボタンをクリックすると、', () => {
     describe('すべての個別カウントを 1 減らして表示する', () => {
-      it('カウント A に、1 を表示する', () => {
+      it('カウント A に、-1 を表示する', () => {
         // 実行（act）
         fireEvent.click(decrementElement)
         const text = countAElement.textContent
@@ -177,7 +177,7 @@ describe('合計カウンター', () => {
         // 検証（assert）
         expect(count).toBe('-1')
       })
-      it('カウント B に、1 を表示する', () => {
+      it('カウント B に、-1 を表示する', () => {
         // 実行（act）
         fireEvent.click(decrementElement)
         const text = countBElement.textContent
