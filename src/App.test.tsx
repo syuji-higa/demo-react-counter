@@ -20,7 +20,7 @@ describe('個別カウンター', () => {
   })
 
   describe('Aria Label を設定する', () => {
-    it('カウント A の Aria Label に "Counter A count" を設定する', () => {
+    it('カウント A の Aria Label に、"Counter A count" を設定する', () => {
       // 検証（assert）
       const ariaLabel = countElement.getAttribute('aria-label')
       expect(ariaLabel).toBe('Counter A count')
@@ -28,7 +28,7 @@ describe('個別カウンター', () => {
   })
 
   describe('カウントに初期値として 0 を表示する', () => {
-    it('はじめにカウント A に 0 を表示する', () => {
+    it('はじめにカウント A に、0 を表示する', () => {
       // 検証（assert）
       const text = countElement.textContent
       const [, count] = Array.from(text?.match(regexpCount) ?? [])
