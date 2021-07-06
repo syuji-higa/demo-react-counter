@@ -1,5 +1,3 @@
-import { VFC } from 'react'
-
 type Props = {
   totalCount: number
   increment: () => void
@@ -7,7 +5,7 @@ type Props = {
 }
 
 // 合計カウントのコンポーネント
-export const TotalCount: VFC<Props> = ({ totalCount, increment, decrement }) => {
+export const TotalCount = ({ totalCount, increment, decrement }: Props) => {
   return (
   	<div>
       <div

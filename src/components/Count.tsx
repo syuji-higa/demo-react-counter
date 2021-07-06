@@ -1,4 +1,3 @@
-import { VFC } from 'react'
 import { UseCount } from '../App'
 
 type Props = ReturnType<UseCount> & {
@@ -6,7 +5,7 @@ type Props = ReturnType<UseCount> & {
 }
 
 // 各カウントのコンポーネント
-export const Count: VFC<Props> = ({ label, count, increment, decrement }) => {
+export const Count = ({ label, count, increment, decrement }: Props) => {
   // 100 までのカウントダウンの値
   const remaining = 100 - count
   
